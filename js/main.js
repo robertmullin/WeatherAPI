@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
 
     var the_position = { // ADDED THIS
@@ -13,7 +15,8 @@ $(document).ready(function () {
 
         var lat = the_position.lat;
         var lng = the_position.lng;
-
+        
+       
         $('.weather-temperature').openWeather({
             key: 'b1718382b89460b2bb6d073e2e688b60',
             lat: lat,
@@ -38,7 +41,26 @@ $(document).ready(function () {
                 console.log(data.error);
                 $('.weather-wrapper').remove();
             }
+            
+            
         });
+        
+       var temp = 25;
+       var celsius = temp;
+       var fahr = (1.8 * temp + 32);
+       var switch_ = new Boolean(false);
+
+       $("#toggle").on("click", function () {
+           switch_ = !switch_;
+           var temp = switch_ == true ? celsius + " °C" : fahr + " °F";
+           $("#temp").text(temp);
+       });
+
     });
 
+     
+    
+    
 });
+
+
