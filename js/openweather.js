@@ -103,6 +103,8 @@ Licensed under the MIT license
 		let temperature;
 		let minTemperature;
 		let maxTemperature;
+        
+        
 
 		// if city isn't null
 		if(s.city != null) {

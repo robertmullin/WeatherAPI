@@ -3,5 +3,9 @@
 }
 
 .celcius {
-    background-color: navy;
+    background-color: lightgrey;
 }
+
+  .farenheit {
+    background: yellow;
+  }
