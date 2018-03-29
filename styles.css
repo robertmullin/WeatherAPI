@@ -1,11 +1,12 @@
-.farenheit {
-    background-color: orangered;
-}
 
 .celcius {
     background-color: lightgrey;
 }
 
-  .farenheit {
+.hide {
+    display: none;
+}
+
+  .farenheit {  
     background: yellow;
   }
