@@ -20,11 +20,10 @@ $(document).ready(function () {
         var unitf = "&units=imperial"
         var apiURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&appid=" + key + unit;
         var apiURLf = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&appid=" + key + unitf;
-
+        
         console.log(apiURL);
 
         console.log(apiURLf);
-
 
         $.getJSON(apiURL, function (result) {
             $(".weather-place").append(result.name);
@@ -32,8 +31,10 @@ $(document).ready(function () {
 
             $(".weather-min-temperature").append(result.main.temp_min);
             $(".weather-max-temperature").append(result.main.temp_max);
+            $(".weather-humidity").append(result.main.humidity);
             $(".weather-description").append(result.weather[0].main + ": " + result.weather[0].description);
-
+            $(".weather-icon").append("<img src='http://openweathermap.org/img/w/" + result.weather[0].icon +".png'>");
+            
             $.getJSON(apiURLf, function (result) {
                 $(".farenheit").prepend(result.main.temp);
 

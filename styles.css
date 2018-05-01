@@ -1,12 +1,66 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
-.celcius {
-    background-color: lightgrey;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(img/fabricBlue.png) top left repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #076585;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fff, #076585);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fff, #076585);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 60%;
+    height: 500px;
+    margin: 8em auto;
 }
 
 .hide {
     display: none;
 }
 
-  .farenheit {  
-    background: yellow;
-  }
+.info-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Serif', serif;
+    color: #222;
+}
+
+#minmax {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    padding: 10px;
+    color: #fff;
+    background-color: #4A6870;
+    font-size: 1.4em;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+button:active {
+    background-color: #006899;
+}
+
+.weather-icon img {
+    width: 100px;
+    height: 100px;
+}

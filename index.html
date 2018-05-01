@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <title>Weather Forecast || A Light Weather Forecast App</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -25,18 +26,17 @@
         <button id="toggle">Toggle F&deg;/C&deg;</button>
         </div>
         
-        <div class="info-wrap">
-        <h4>Min/Max Temperature:</h4><h3 class="weather-min-temperature"></h3><h3 class="weather-max-temperature"></h3>
+        <div class="info-wrap" id="minmax">
+        <h4>Min/Max Temperature:</h4><h3 class="weather-min-temperature"></h3>/<h3 class="weather-max-temperature"></h3>
         </div>
         
+        <div class="info-wrap">
+        <h4>Humidity:</h4><h3 class="weather-humidity"></h3>
+        </div>
         
         <div class="info-wrap">
         <h4>Conditions:</h4><h3 class="weather-description"></h3>
         <div class="weather-icon"></div>
-        </div>
-
-        <div class="info-wrap">
-        <h4>Humidity:</h4><h3 class="weather-humidity"></h3>
         </div>
 
         
